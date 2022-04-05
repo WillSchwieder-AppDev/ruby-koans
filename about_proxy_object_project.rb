@@ -47,7 +47,7 @@ class AboutProxyObjectProject < Neo::Koan
   end
 
   def test_tv_methods_still_perform_their_function
-    tv = Proxy.ew(Television.new)
+    tv = Proxy.new(Television.new)
 
     tv.channel = 10
     tv.power
